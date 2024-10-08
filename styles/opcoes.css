@@ -21,7 +21,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 33px;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
     margin: 0 auto;
 }
 
@@ -51,12 +53,6 @@
 }
 
 
-@media screen and (min-width: 310px) {
-    .corpo__opcoes-lista {
-        gap: 45px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .corpo {
         padding: 32px 0 18px;
@@ -67,7 +63,8 @@
     }
 
     .corpo__opcoes-lista {
-        gap: 55px;
+        gap: 36px;
+        row-gap: 18px;
     }
 }
 
@@ -78,10 +75,6 @@
 
     .corpo__opcoes {
         margin-bottom: 45px;
-    }
-
-    .corpo__opcoes-lista {
-        gap: 55px;
     }
 
     .corpo__opcoes-botao:hover {
